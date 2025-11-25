@@ -1,6 +1,6 @@
 ---
 title: "Báo cáo thực tập"
-date: "`r Sys.Date()`"
+date: 2025-11-25
 weight: 1
 chapter: false
 ---
