@@ -1,113 +1,100 @@
 ---
 title: "Proposal"
-date: 2025-11-25
+date: "2025-11-25"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
-
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# GENERATIVE AI TRAVEL PLANNER
+## A Conversational Itinerary Platform Using Serverless Architecture and Foundation Models
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+The Generative AI Travel Planner is a serverless web application designed to help travelers, travel agencies, and tourism professionals create personalized travel itineraries efficiently. By inputting destination, trip duration, and interests, users receive AI-generated day-by-day plans with activities, timing, and descriptions tailored to their preferences. The platform is built on AWS services such as AWS Lambda and Bedrock to enhance user experiences in real-world applications, with potential applications in tourism businesses, travel startups, and personal trip planning.
 
 ### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+### The Problem?
+Planning a multi-day trip requires significant time and effort to research destinations, coordinate activities, and create a cohesive itinerary. Travelers often spend hours browsing multiple websites, blogs, and reviews to piece together daily plans that match their interests and available time. Travel agencies and tourism professionals face similar challenges when creating customized itineraries for clients, leading to repetitive manual work. There is a need for an intelligent, automated solution that can generate personalized travel plans quickly while maintaining quality and relevance to user preferences.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+### The Solution and Benefits
+The platform leverages AWS Amplify to provide a fully serverless web application with continuous deployment capabilities. User requests are processed through a GraphQL API built with AWS AppSync, which communicates with AWS Lambda functions for backend logic. Amazon Bedrock with the Claude Haiku foundation model generates intelligent, context-aware itineraries based on user inputs. Amplify Auth manages user authentication and secure access to the application. The solution offers a simple HTML-based interface where users submit their destination, trip duration, and interests, then receive comprehensive day-by-day itineraries with activities, timing, and descriptions.
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+Key benefits include rapid itinerary generation that saves hours of manual research, personalized recommendations tailored to individual preferences, and a scalable architecture that can handle multiple concurrent users. The serverless approach ensures cost efficiency through pay-per-use pricing while demonstrating practical integration of generative AI with modern AWS services. The platform can be extended for travel agencies, tourism businesses, or personal trip planning applications.
+
 
 ### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+The platform employs a serverless AWS architecture to deliver an AI-powered travel itinerary generation system. User requests flow through AWS Amplify's hosted web interface, where inputs are processed via a GraphQL API managed by AWS AppSync. Backend logic is handled by AWS Lambda functions, which interact with Amazon Bedrock to generate personalized itineraries using the Claude Haiku foundation model. User authentication and access control are managed through Amplify Auth with Amazon Cognito integration. The architecture is detailed below:
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+![GenAI Travel Planner Architecture](/images/Project_Architecture.drawio.png)
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
 
 ### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+- **AWS Amplify**: Hosts the HTML-based web interface with continuous deployment capabilities.
+- **AWS AppSync**: Manages the GraphQL API for efficient data operations and real-time communication between frontend and backend.
+- **AWS Lambda**: Executes backend processing logic and handles requests for AI-generated itineraries.
+- **Amazon Bedrock**: Provides access to the Claude Haiku foundation model for intelligent itinerary generation.
+- **Amazon Cognito (via Amplify Auth)**: Manages user authentication and secures application access.
 
 ### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+- **Web Interface**: AWS Amplify hosts the HTML-based user interface where users input destination, trip duration, and interests, then view generated itineraries.
+- **API Layer**: AWS AppSync provides a GraphQL API that facilitates communication between the frontend and backend services.
+- **Backend Processing**: AWS Lambda functions handle business logic, process user requests, and coordinate interactions with other AWS services.
+- **AI Generation**: Amazon Bedrock with Claude Haiku foundation model generates personalized, context-aware travel itineraries based on user inputs.
+- **User Management**: Amplify Auth with Amazon Cognito manages user registration, authentication, and secure access to the application.
 
 ### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
-
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+- **Frontend Application**: HTML-based user interface with form inputs for destination, number of days, and interests. The interface displays AI-generated itineraries in a structured format with day-by-day breakdown including activities, timing, and descriptions.
+- **Backend Services**: AWS Lambda functions to handle API requests, process user inputs, and interact with Amazon Bedrock. Knowledge of AWS SDK for invoking Bedrock foundation models and constructing prompts for the Claude Haiku model.
+- **API and Data Management**: AWS AppSync configuration for GraphQL API schema definition, resolvers, and data sources. Understanding of GraphQL operations to connect frontend requests with backend functions.
+- **Authentication**: Amplify Auth setup with Amazon Cognito for user authentication, enabling secure registration, login, and session management with protected API endpoints.
+- **AI Integration**: Practical knowledge of Amazon Bedrock API for model invocation, prompt engineering for travel itinerary generation, and response handling. Understanding of Claude Haiku model capabilities and constraints.
+Deployment: AWS Amplify configuration for continuous deployment, environment management, and web application hosting.
 
 ### 5. Timeline & Milestones
 **Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+- Month 1: Study AWS foundation concepts and services
+- Month 2: Plan and design project architecture
+- Month 3: Develop, test and deploy
+    - Week 1: AWS service setup and configuration
+    - Week 2: Backend development and Bedrock integration
+    - Week 3: Frontend development and API connection
+    - Week 4: Testing, debugging, and deployment
+
 
 ### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+<!-- You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
+Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf). -->
 
 ### Infrastructure Costs
 - AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+    - Amazon Bedrock: 2.10$/month
+    - AWS Lambda: 0$/month
+    - AWS Amplify: 0.27$/month
+    - AWS Appsync: 0.11$/month
+    - Amazon Cognito: 0.25$/month
 
-Total: $0.7/month, $8.40/12 months
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+Total: 2.73$/month, 32.76$/month
+
 
 ### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+- Risk
+    - Potential service quotas or regional availability issues with Amazon Bedrock in the Singapore region.
+    - Hitting Bedrock or Lambda invocation limits during testing.
+    - Inconsistent itinerary quality from AI model responses.
+- Mitigation
+    - Monitor service health dashboards.
+    - Implement prompt validation and response filtering.
+- Contingency
+    - Use alternative AWS regions or models if primary services face limitations.
+    - Create template-based fallback itineraries.
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
-
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
 
 ### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+- Fully functional serverless application deployed on AWS
+- Seamless integration between Amplify, AppSync, Lambda, and Bedrock
+- Effective prompt engineering for travel itinerary generation
+- Optimized token usage maintaining cost under $3/month
+- Reliable model responses with consistent formatting
+

@@ -11,17 +11,17 @@ chapter: false
 
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Kim IL Woo
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0911702278 
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** kimphapminh@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** University of Greenwich
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** COS1101
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
