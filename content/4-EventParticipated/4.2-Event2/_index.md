@@ -11,7 +11,7 @@ pre: " <b> 4.2. </b> "
 
 ### Event Objectives
 
-To provide a comprehensive, hands-on introduction to AWS's Artificial Intelligence, Machine Learning, and Generative AI services. The workshop aims to equip participants with a foundational understanding of the core platforms—Amazon SageMaker and Amazon Bedrock—enabling them to understand how to build, deploy, and scale intelligent solutions, with a specific focus on the practical application of Generative AI.
+This workshop offers a practical, foundational introduction to AWS's AI, ML, and Generative AI services. Participants will gain core knowledge of Amazon SageMaker and Amazon Bedrock, learning how to construct, launch, and manage intelligent solutions. A key focus is placed on the hands-on application of Generative AI.
 
 ### Host
 
@@ -19,17 +19,17 @@ To provide a comprehensive, hands-on introduction to AWS's Artificial Intelligen
 
 ### Key Highlights
 
-- **End-to-End ML Platform**: A deep dive into Amazon SageMaker, covering the entire ML lifecycle from data preparation and model training to deployment and MLOps.
-- **Hands-On Generative AI**: Practical exploration of Amazon Bedrock, including access to leading foundation models (like Claude and Llama), advanced prompt engineering, and building a functional AI chatbot.
-- **Architecting Intelligent Agents**: Learn to build sophisticated Bedrock Agents that can perform multi-step tasks and integrate with external tools and knowledge bases using RAG (Retrieval-Augmented Generation).
-- **Practical Demos & Safety**: Live walkthroughs of SageMaker Studio and a Generative AI chatbot, coupled with crucial guidance on implementing Guardrails for safe and responsible AI applications. 
+- **End-to-End ML Platform**: A deep dive into Amazon SageMaker, mastering the end-to-end ML lifecycle from data prep and training to deployment and operationalization (MLOps).
+- **Hands-On Generative AI**: A hands-on exploration of Amazon Bedrock, covering access to leading models (Claude, Llama), advanced prompting, and building a functional chatbot.
+- **Architecting Intelligent Agents**: Developing advanced Bedrock Agents that perform multi-step tasks by connecting to external APIs and knowledge sources using RAG.
+- **Practical Demos & Safety**: Live demonstrations of core tools, coupled with critical best practices for implementing Guardrails to promote safe, responsible AI.
 
 ### Key Takeaways
 
-- **Actionable Knowledge of Core Services**: Understand the purpose and capabilities of Amazon SageMaker for traditional ML and Amazon Bedrock for Generative AI, and know when to use each.
-- **Foundational Skills in Prompt Engineering**: Learn and apply key techniques like Chain-of-Thought reasoning and Few-shot learning to effectively communicate with and control large language models.
-- **Ability to Implement a RAG System**: Grasp the architecture for building Generative AI applications that can access and leverage your proprietary data, moving beyond generic chatbots to create specialized, knowledgeable assistants.
-- **Awareness of the AI/ML Ecosystem**: Gain insights into the current AI/ML landscape in Vietnam and the tools available on AWS to innovate and build solutions responsibly and efficiently.  
+- **Actionable Knowledge of Core Services**: Differentiate the core functions of SageMaker (ML lifecycle) and Bedrock (Generative AI), selecting the right service for the task.
+- **Foundational Skills in Prompt Engineering**: Employ prompt engineering strategies to improve LLM reasoning and performance.
+- **Ability to Implement a RAG System**: Design the architecture for generative AI applications that harness internal data, creating domain-specific assistants.
+- **Awareness of the AI/ML Ecosystem**: Understand the regional AI context in Vietnam and utilize AWS to develop efficient, responsible innovations. 
 
 #### Some event photos
 ![Eventpicture](/images/AWS-Cloud-Mastery-Series-1.png) 

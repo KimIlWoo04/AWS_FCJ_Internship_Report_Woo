@@ -20,17 +20,17 @@ Nhằm cung cấp một cái nhìn tổng quan toàn diện và thực tiễn v�
 
 ### Nội Dung Nổi Bật
 
-- **Nền tảng ML Toàn diện**: Tìm hiểu chuyên sâu về Amazon SageMaker, bao trùm toàn bộ vòng đời của Học máy từ chuẩn bị dữ liệu, huấn luyện mô hình đến triển khai và Vận hành ML (MLOps).
-- **Trí tuệ Nhân tạo Tạo sinh Thực hành**: Khám phá thực tế Amazon Bedrock, bao gồm quyền truy cập vào các mô hình nền tảng hàng đầu (như Claude và Llama), kỹ thuật tạo lệnh nâng cao và xây dựng một chatbot AI có chức năng hoàn chỉnh.
-- **Kiến trúc Tác nhân Thông minh**: Học cách xây dựng các Tác nhân Bedrock (Bedrock Agents) tinh vi có khả năng thực hiện các tác vụ nhiều bước và tích hợp với các công cụ bên ngoài cũng như cơ sở kiến thức bằng kỹ thuật RAG (Retrieval-Augmented Generation).
-- **Bản demo Thực tế & An toàn**: Hướng dẫn trực tiếp qua SageMaker Studio và một chatbot Generative AI, đi kèm với những hướng dẫn quan trọng về việc triển khai Guardrails để đảm bảo các ứng dụng AI an toàn và có trách nhiệm.
+- **Nền tảng ML Toàn diện**: Tìm hiểu chuyên sâu về Amazon SageMaker, thành thạo toàn bộ vòng đời Máy học từ chuẩn bị dữ liệu, huấn luyện mô hình đến triển khai và vận hành (MLOps).
+- **Trí tuệ Nhân tạo Tạo sinh Thực hành**: Khám phá thực tế Amazon Bedrock, bao gồm cách truy cập các mô hình hàng đầu (như Claude, Llama), kỹ thuật prompt nâng cao và xây dựng một chatbot chức năng.
+- **Kiến trúc Tác nhân Thông minh**: Phát triển các Bedrock Agent nâng cao, có khả năng thực hiện tác vụ đa bước bằng cách kết nối với API bên ngoài và nguồn tri thức thông qua RAG.
+- **Bản demo Thực tế & An toàn**: Các bản demo trực tiếp công cụ cốt lõi, đi kèm những phương pháp tối ưu quan trọng để triển khai Guardrails, thúc đẩy phát triển AI an toàn và có trách nhiệm.
 
 ### Những điểm chính đúc kết
 
-- **Kiến thức Thực tiễn về Các Dịch vụ Cốt lõi**: Hiểu rõ mục đích và khả năng của Amazon SageMaker cho ML truyền thống và Amazon Bedrock cho Generative AI, đồng thời biết khi nào nên sử dụng từng dịch vụ.
-- **Kỹ năng Nền tảng về Kỹ thuật Tạo lệnh**: Học và áp dụng các kỹ thuật then chốt như lập luận Chuỗi suy nghĩ (Chain-of-Thought) và Học với Ít mẫu (Few-shot learning) để giao tiếp và kiểm soát hiệu quả các mô hình ngôn ngữ lớn.
-- **Khả năng Triển khai Hệ thống RAG**: Nắm vững kiến trúc để xây dựng các ứng dụng Generative AI có thể truy cập và tận dụng dữ liệu độc quyền của bạn, vượt xa các chatbot thông thường để tạo ra các trợ lý chuyên biệt, giàu tri thức.
-- **Hiểu biết về Hệ sinh thái AI/ML**: Có được cái nhìn sâu sắc về hệ sinh thái AI/ML hiện tại tại Việt Nam và các công cụ có sẵn trên AWS để đổi mới và xây dựng giải pháp một cách có trách nhiệm và hiệu quả.
+- **Kiến thức Thực tiễn về Các Dịch vụ Cốt lõi**: Phân biệt được chức năng chính của SageMaker (cho vòng đời ML) và Bedrock (cho AI Tạo Sinh), biết cách lựa chọn dịch vụ phù hợp cho từng nhiệm vụ.
+- **Kỹ năng Nền tảng về Kỹ thuật Tạo lệnh**: Ứng dụng các chiến lược prompt engineering để cải thiện khả năng suy luận và hiệu suất của mô hình ngôn ngữ lớn (LLM).
+- **Khả năng Triển khai Hệ thống RAG**: Thiết kế kiến trúc cho các ứng dụng AI Tạo Sinh có khả năng khai thác dữ liệu nội bộ, tạo ra những trợ lý ảo chuyên biệt theo từng lĩnh vực.
+- **Hiểu biết về Hệ sinh thái AI/ML**: Hiểu bối cảnh AI tại khu vực Việt Nam và biết cách sử dụng AWS để phát triển các giải pháp đổi mới, hiệu quả và có trách nhiệm.
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![Eventpicture](/images/AWS-Cloud-Mastery-Series-1.png) 

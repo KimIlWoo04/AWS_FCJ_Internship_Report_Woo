@@ -20,18 +20,18 @@ Nhằm cung cấp một sự hiểu biết toàn diện, xuyên suốt về phư
 
 ### Nội Dung Nổi Bật
 
-- **Pipeline CI/CD Xuyên suốt**: Tìm hiểu chuyên sâu về bộ công cụ dành cho Nhà phát triển AWS (CodeCommit, CodeBuild, CodeDeploy, CodePipeline) để tự động hóa hoàn toàn quy trình phát hành phần mềm, bao gồm cả các chiến lược triển khai nâng cao như Blue/Green và Canary.
-- **Làm chủ Hạ tầng dưới dạng Mã (IaC)**: Khám phá thực hành cả hai phương pháp tiếp cận khai báo (AWS CloudFormation) và lập trình (AWS CDK) để định nghĩa và quản lý hạ tầng đám mây.
-- **Container hóa & Kiến trúc Microservice**: Hướng dẫn thực tế để vận hành các ứng dụng được container hóa bằng Amazon ECS, EKS và dịch vụ đơn giản hóa AWS App Runner, bao gồm quản lý image với Amazon ECR.
-- **Quan sát Hệ thống Toàn diện**: Học cách triển khai giám sát, ghi log và theo dõi phân tán (distributed tracing) bằng Amazon CloudWatch và AWS X-Ray để có được những hiểu biết sâu sắc về tình trạng sức khỏe và hiệu năng ứng dụng.
-- **Các Thực hành Tốt nhất Từ Thực tế**: Những bài học hành động thiết thực từ các case study bao gồm chiến lược triển khai, quản lý sự cố và các chỉ số then chốt (DORA) để đo lường hiệu quả DevOps.
+- **Pipeline CI/CD Xuyên suốt**: Tự động hóa quy trình phát hành phần mềm từ đầu đến cuối bằng Bộ Công Cụ Dành Cho Nhà Phát Triển AWS (CodeCommit, CodeBuild, CodeDeploy, CodePipeline), thành thạo các chiến lược triển khai nâng cao như Blue/Green và Canary.
+- **Làm chủ Hạ tầng dưới dạng Mã (IaC)**: So sánh và áp dụng hai phương pháp tiếp cận IaC: khai báo (CloudFormation) và lập trình (CDK).
+- **Container hóa & Kiến trúc Microservice**: Triển khai và quản lý ứng dụng dưới dạng container bằng Amazon ECS, EKS và AWS App Runner, cùng với Amazon ECR để quản lý hình ảnh container.
+- **Quan sát Hệ thống Toàn diện**: Triển khai hệ thống quan sát mạnh mẽ với CloudWatch cho giám sát/nhật ký và X-Ray cho theo dõi phân tán (distributed tracing).
+- **Các Thực hành Tốt nhất Từ Thực tế**: Thu nhận những bài học thực tiễn từ các case study về chiến lược triển khai, ứng phó sự cố và các chỉ số đo lường hiệu suất DevOps then chốt (DORA).
 
 ### Những điểm chính đúc kết
 
-- **Khả năng Tự động hóa Pipeline CI/CD**: Hiểu cách kết hợp các dịch vụ AWS để tạo ra một quy trình hoàn toàn tự động, bảo mật và nhanh chóng từ khi commit mã cho đến khi triển khai lên môi trường production.
-- **Kỹ năng Thực hành với Hạ tầng dưới dạng Mã**: Có được kiến thức để lựa chọn và sử dụng CloudFormation hoặc CDK để quản lý hạ tầng một cách đáng tin cậy và hiệu quả.
-- **Khuôn mẫu Triển khai Container**: Tìm hiểu các dịch vụ container cốt lõi của AWS và biết khi nào nên sử dụng ECS, EKS hoặc App Runner cho kiến trúc microservice của bạn.
-- **Chiến lược Giám sát và Đảm bảo Độ tin cậy**: Biết cách thiết lập một hệ thống quan sát toàn diện để chủ động phát hiện sự cố, xử lý các điểm nghẽn hiệu năng và nâng cao độ tin cậy của ứng dụng.
+- **Khả năng Tự động hóa Pipeline CI/CD**: Xây dựng một pipeline phân phối tự động—điều phối các dịch vụ AWS để tạo ra hành trình bảo mật và tốc độ cao từ mã nguồn đến sản phẩm cuối cùng.
+- **Kỹ năng Thực hành với Hạ tầng dưới dạng Mã**: Làm chủ IaC—đưa ra lựa chọn sáng suốt giữa CloudFormation và CDK để cung cấp và quản lý tài nguyên hiệu quả.
+- **Khuôn mẫu Triển khai Container**: Định hướng và lựa chọn đúng dịch vụ điều phối container—hiểu rõ thời điểm nên sử dụng ECS, EKS hay App Runner cho nhu cầu kiến trúc microservices cụ thể.
+- **Chiến lược Giám sát và Đảm bảo Độ tin cậy**: Đạt được khả năng quan sát toàn diện—thiết lập hệ thống giám sát và theo dõi để dự đoán sự cố, giải quyết điểm nghẽn và đảm bảo độ tin cậy cho ứng dụng.
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![Eventpicture](/images/AWS-Cloud-Mastery-Series-2.png) 
