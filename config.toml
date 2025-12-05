@@ -1,5 +1,4 @@
 baseURL = "https://workshop-sample.fcjuni.com"
-publishDir = "public"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
