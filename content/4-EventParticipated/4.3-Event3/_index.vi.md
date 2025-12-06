@@ -31,7 +31,7 @@ Nhằm cung cấp một sự hiểu biết toàn diện, xuyên suốt về phư
 - **Khả năng Tự động hóa Pipeline CI/CD**: Xây dựng một pipeline phân phối tự động—điều phối các dịch vụ AWS để tạo ra hành trình bảo mật và tốc độ cao từ mã nguồn đến sản phẩm cuối cùng.
 - **Kỹ năng Thực hành với Hạ tầng dưới dạng Mã**: Làm chủ IaC—đưa ra lựa chọn sáng suốt giữa CloudFormation và CDK để cung cấp và quản lý tài nguyên hiệu quả.
 - **Khuôn mẫu Triển khai Container**: Định hướng và lựa chọn đúng dịch vụ điều phối container—hiểu rõ thời điểm nên sử dụng ECS, EKS hay App Runner cho nhu cầu kiến trúc microservices cụ thể.
-- **Chiến lược Giám sát và Đảm bảo Độ tin cậy**: Đạt được khả năng quan sát toàn diện—thiết lập hệ thống giám sát và theo dõi để dự đoán sự cố, giải quyết điểm nghẽn và đảm bảo độ tin cậy cho ứng dụng.
+- **Chiến lược Giám sát và Đảm bảo Độ tin cậy**: Đạt được khả năng quan sát toàn diện—thiết lập hệ thống giám sát và theo dõi để dự đoán sự cố, giải quyết điểm nghẽn và đảm bảo độ tin cậy cho ứng dụng.g
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![Eventpicture](/images/AWS-Cloud-Mastery-Series-2.png) 
