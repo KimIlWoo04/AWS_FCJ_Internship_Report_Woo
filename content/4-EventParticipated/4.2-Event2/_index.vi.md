@@ -33,7 +33,7 @@ Nhằm cung cấp một cái nhìn tổng quan toàn diện và thực tiễn v�
 - **Hiểu biết về Hệ sinh thái AI/ML**: Hiểu bối cảnh AI tại khu vực Việt Nam và biết cách sử dụng AWS để phát triển các giải pháp đổi mới, hiệu quả và có trách nhiệm.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Eventpicture](/AWS_FCJ_Internship_Report_Woo/images/AWS-Cloud-Mastery-Series-1.png) 
+![Eventpicture](/AWS_FCJ_Internship_Report_Woo/images/AWS-Cloud-Mastery-Series-1.png)
 
 > Nhìn chung, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn trang bị cho tôi phương pháp xây dựng các ứng dụng AI thông minh và AI tạo sinh bằng các dịch vụ cốt lõi của AWS..
 
