@@ -34,7 +34,7 @@ Nhằm cung cấp một sự hiểu biết toàn diện, xuyên suốt về phư
 - **Chiến lược Giám sát và Đảm bảo Độ tin cậy**: Đạt được khả năng quan sát toàn diện—thiết lập hệ thống giám sát và theo dõi để dự đoán sự cố, giải quyết điểm nghẽn và đảm bảo độ tin cậy cho ứng dụng.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Eventpicture](/AWS_FCJ_Internship_Report_Woo/images/AWS-Cloud-Mastery-Series-2.png) 
+![Eventpicture](/images/AWS-Cloud-Mastery-Series-2.png) 
 
 > Nhìn chung, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi làm chủ các công cụ và quy trình thực hành để phát hành phần mềm tốt hơn, nhanh hơn và đáng tin cậy hơn bằng cách sử dụng bộ công cụ DevOps trên AWS.
 
